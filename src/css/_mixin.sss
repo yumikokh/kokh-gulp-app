@@ -1,0 +1,43 @@
+@define-mixin bg-image $url, $scale: 1, $important: false 
+  $width: calc(width($url) * $scale)
+  $height: calc(height($url) * $scale)
+  width: $width
+  height: $height
+  display: block
+  background-image: resolve($url)
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
+
+@define-mixin abs-center 
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+
+
+@define-mixin pc-layout 
+  [data-dv='isPC'] 
+    @mixin-content
+
+
+@define-mixin sp-layout 
+  [data-dv='isSP'] 
+    @mixin-content
+
+@define-mixin fade-elm $initialStatus: "show"
+  transition: opacity .8s
+  @if $initialStatus == "show"
+    opacity: 1
+    pointer-events: all
+    &.hide
+      opacity: 0
+      pointer-events: none
+  @else if $initialStatus == "hide"
+    opacity: 0
+    pointer-events: none
+    &.show
+      opacity: 1
+      pointer-events: all

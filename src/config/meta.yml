@@ -1,0 +1,14 @@
+title: とうほく食べる学校
+description: とうほく食べる学校のウェブサイトです
+keywords: []
+# base_path: example/
+url: http://example.com
+ogp_image_url: http://example.com/images/ogp.jpg
+# ogp_description: 
+# twitter_card_owner: '@TwitterJP'
+favicon_url: favicon.ico
+# webclipicon_url: http://example.com/webclipicon.png
+# facebook_app_id: 313442492441394
+
+# iOSにて、サイトをホーム画面に追加した際の、ステータスバーの挙動指定
+# ios_status_bar: default

@@ -1,0 +1,42 @@
+.wrapper
+  position: relative
+  width: 100%
+  min-height: 100%
+  line-height: 60px
+  font-size: 28px
+  color: #fff
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif
+
+html,body
+  height: 100%
+
+body
+  background-color: #000
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-box-shadow: none
+  box-shadow: none
+  outline: none
+
+[data-dv="isPC"]
+  &.wrapper > div:not(.invalidPC)
+    display: none
+
+[data-dv="isInvalidSP"]
+  .top, .play, .soundModal
+    display: none
+
+
+@mixin sp-layout
+  *
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-box-shadow: none
+    box-shadow: none
+    outline: none
+  
+
+
+
+
+
